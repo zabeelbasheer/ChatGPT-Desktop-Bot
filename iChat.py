@@ -3,7 +3,9 @@ import customtkinter
 import openai
 import os
 import pickle
+import ctypes
 
+ctypes.windll.shcore.SetProcessDpiAwareness(1)
 
 root = customtkinter.CTk()
 root.title("iChat Bot")
